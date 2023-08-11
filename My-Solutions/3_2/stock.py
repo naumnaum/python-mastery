@@ -14,9 +14,7 @@ def read_portfolio(filename='../../Data/portfolio.csv'):
         return records
 
 def print_portfolio(portfolio):
-    assert isinstance(portfolio, list)
     for s in portfolio:
-           assert isinstance(s, Stock)
            print('%10s %10d %10.2f' % (s.name, s.shares, s.price))
 
 class Stock:
